@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <!-- Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+
+    <!-- iconos -->
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+</head>
+<body>
+    
+    <div class="headerContainer">
+        <header class="header">
+            <div class="containerHead">
+                <div class="logo">
+                    <a href="index.html"><img src="imagenes/logo.jpg" alt="logo"></a>
+                </div>
+                <nav class="navbar">
+                    <ol class="list">
+                        <li><a href="compras.html"><span class="material-symbols-outlined">
+                            shopping_bag</span><span id="cart-count" class="cart-count">0</span></a></li>
+                    </ol>
+                </nav>
+            </div>
+        </header>
+    </div>
+
+    <main class="container">
+        <!-- Catálogo de Vinos -->
+        <section id="catalogo-vinos">
+          <h2 class="catalogo">Catálogo de Vinos y Espumantes</h2>
+          <div class="producto">
+            <img src="imagenes/DecimoMalbec.jpg" alt="Decimo Malbec" class="producto">
+            <h3>Vino Decimo Malbec</h3>
+            <p>De color rojo y fondo negro. En nariz sobresalen la fruta negra madura, pimiento fresco y violetas perfectamente complementados con el tostado que le aportan las barricas de roble, logrando mucha complejidad</p>
+            <span>$12000.00</span>
+            <button onclick="agregarAlCarrito('Vino Decimo Malbec', 12000.00)">Añadir al Carrito</button>
+          </div>
+          <div class="producto">
+            <img src="imagenes/Bramare.jpg" alt="Bramare">
+            <h3>Vino Malbec Bramare</h3>
+            <p>Seduce con su color rojo violáceo, muy profundo. En nariz tiene gran presencia de frutas rojas con notas ácidas, cassis, frutilla; lentamente va mostrando notas a caramelo, especias, pimienta blanca, chocolate y grafito, en conjunto con delicadas notas mentoladas y romero.</p>
+            <span>$11000.00</span>
+            <button onclick="agregarAlCarrito('Vino Malbec Bramare', 11000.00)">Añadir al Carrito</button>
+          </div>
+          <div class="producto">
+            <img src="imagenes/SalenteinReservaMalbec.jpg" alt="Salentein Malbec">
+            <h3>Salentein Reserva Malbec</h3>
+            <p>Color rojo carmesí brillante. En nariz es puro, limpio, delicado, con aromas de frutilla y notas herbales. En boca es intenso, sabroso, con tensión.</p>
+            <span>$10500.00</span>
+            <button onclick="agregarAlCarrito('Salentein Reserva Malbec', 10500.00)">Añadir al Carrito</button>
+          </div>
+          <div class="producto">
+            <img src="imagenes/ChacChacMalbec.jpg" alt="Chac Chac Malbec">
+            <h3>Chac Chac Malbec</h3>
+            <p>Color rojo violáceo intenso. Gran concentración, a la nariz presenta aromas a frutos rojos, mermelada de ciruelas y frutillas.</p>
+            <span>$9500.00</span>
+            <button onclick="agregarAlCarrito('Chac Chac Malbec', 9500.00)">Añadir al Carrito</button>
+          </div>
+          <div class="producto">
+            <img src="imagenes/chandonDeliceMini.jpg" alt="Chandon Mini Delice">
+            <h3>Chandon Mini Delice</h3>
+            <p>afrutado y dulce, con sabores intensos a frutas tropicales y un toque de acidez refrescante que equilibra la dulzura y añade frescura al conjunto.</p>
+            <span>$5000.00</span>
+            <button onclick="agregarAlCarrito('Chandon Mini Delice', 5000.00)">Añadir al Carrito</button>
+          </div>
+          <div class="producto">
+            <img src="imagenes/ChandonExtraBrutMini.jpg" alt="Espumante Brut mini">
+            <h3>Chandon Mini Extra Brut</h3>
+            <p>Tiene un suave color amarillo con leves tonos dorados, con aroma fresco y elegante. Marcado perfil cítrico de durazno blanco. Presencia de notas a frutos rojos en armonía con sutiles notas de pan y brioche. Posee un sabor suave y muy frutado.</p>
+            <span>$5000.00</span>
+            <button onclick="agregarAlCarrito('Chandon Mini Extra Brut', 5000.00)">Añadir al Carrito</button>
+          </div>
+          <div class="producto">
+            <img src="imagenes/ChandonAperitif.jpg" alt="Espumante Brut" width="">
+            <h3>Chandon Aperitif 750ml</h3>
+            <p>Posee un color naranja de intensidad media con reflejos rosados, con aromas de cáscaras de naranja confitadas, notas cítricas y un armónico bouquet especiado y floral. En boca es fresco y ligero.</p>
+            <span>$11500.00</span>
+            <button onclick="agregarAlCarrito('Chandon Aperitif 750ml', 11500.00)">Añadir al Carrito</button>
+          </div> 
+        </section>
+    </main>
+
+<script src="JS/app.js"></script>
+</body>
+</html>
