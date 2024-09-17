@@ -28,7 +28,13 @@ function Comprar() {
     botonComprar.addEventListener('click', () => {
       
       const mensaje = document.createElement('h1');
-      mensaje.textContent = 'Tu compra ha sido realizada con éxito';
+      mensaje.textContent = Swal.fire({
+        position: "mid",
+        icon: "success",
+        title: "Tu compra ha sido realizada",
+        showConfirmButton: false,
+        timer: 1500
+      });
 
       document.getElementById('contenedor').appendChild(mensaje);
     });
